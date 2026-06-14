@@ -15,7 +15,8 @@
     }
 
     body {
-      background: linear-gradient(180deg, #0b0a0f 0%, #1a120b 80%);
+      /* RED BACKGROUND BROUGHT BACK & BLENDED WITH THE DARK REALM GRADIENT */
+      background: linear-gradient(180deg, #2b0000 0%, #1a0b0b 50%, #0b0a0f 100%);
       color: #fff;
       font-family: 'Silkscreen', monospace;
       display: flex;
@@ -36,10 +37,11 @@
       margin-bottom: 1rem;
       text-transform: uppercase;
       color: #ff0000;
-      text-shadow:
-        0 0 3px #ff6f00,
-        0 0 6px #ff3e00,
-        0 0 12px #ff1a00;
+      
+      /* FIXED GLOW: Replaced neon shadow with a crisp, clean retro arcade outline */
+      -webkit-text-stroke: 2px #4a0000;
+      text-shadow: 2px 2px 0px #000;
+      
       animation: flickerFire 3s infinite alternate;
     }
 
